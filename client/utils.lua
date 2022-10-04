@@ -52,6 +52,7 @@ function onUnanchored(vehicle)
 end
 
 function onAnchoring(vehicle)
+    TriggerEvent('chat:addMessage', { args = {"^4[Anchor]", "^*^0Boat has been anchored!"} })
     return true
 end
 
